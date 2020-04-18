@@ -6,7 +6,7 @@ sudo apt purge kasumi -y
 sudo apt purge goldendict -y
 sudo apt purge hdate-applet -y
 sudo apt purge gnome-maps -y
-sudo apt autoremove
+sudo apt autoremove -y
 
 # actualizar favoritos
 gsettings set org.gnome.shell favorite-apps "['firefox-esr.desktop','org.gnome.Nautilus.desktop','org.gnome.Terminal.desktop']"

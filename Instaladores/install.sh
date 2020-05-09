@@ -11,3 +11,6 @@ sudo apt install fonts-powerline -y
 
 #File Manager (Midnight Commander Features)
 sudo apt install mc -y
+
+#Process Viewer
+sudo apt install htop -y

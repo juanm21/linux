@@ -1,8 +1,13 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install software-properties-common apt-transport-https curl zsh -y
+sudo apt install software-properties-common apt-transport-https curl -y
 
-#fonts
-sudo apt install fonts-powerline
+#Terminal
+sudo apt install zsh -y 
 
+#Fonts
+sudo apt install fonts-powerline -y
+
+#File Manager (Midnight Commander Features)
+sudo apt install mc -y

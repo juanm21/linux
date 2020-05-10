@@ -2,7 +2,7 @@ echo 'Update'
 sudo apt update
 sudo apt upgrade
 
-echo 'Install 1'
+echo 'Install curl'
 sudo apt install software-properties-common apt-transport-https curl -y
 
 echo 'Install zsh'

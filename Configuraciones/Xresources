@@ -1,3 +1,5 @@
+#include "~/Linux/Configuraciones/Xresources.dark"
+
 ! Use a truetype font and size
 xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 10

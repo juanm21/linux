@@ -13,6 +13,7 @@ sudo apt install zsh -y
 echo 'Install fonts'
 #Fonts
 sudo apt install fonts-powerline -y
+sudo apt install fonts-firacode -y
 
 echo 'Install File Manager mc'
 #File Manager (Midnight Commander Features)

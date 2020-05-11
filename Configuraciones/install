@@ -1,0 +1,5 @@
+echo 'Copy .Xresources'
+cp Xresources ~/.Xresources
+
+echo 'Cppy zshrc'
+cp zshrc ~/.zshrc

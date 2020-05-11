@@ -5,6 +5,9 @@ sudo apt upgrade
 echo 'Install curl'
 sudo apt install software-properties-common apt-transport-https curl -y
 
+echo 'Install XInit - requerido para instalar algun gestor de ventanas' 
+sudo apt install xinit -y
+
 echo 'Install zsh'
 #Terminal
 sudo apt install xterm -y
@@ -30,4 +33,9 @@ sudo apt install htop -y
 echo  'Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo 'Install SSH-Server'
+sudo apt install openssh-server
+
+echo 'Restart SSH Server'
+sudo service ssh restart
 

@@ -23,6 +23,11 @@ echo 'Install Process Viewee htop'
 #Process Viewer
 sudo apt install htop -y
 
-echo 'Install Awesome'
+#echo 'Install Awesome'
 #Window Manager "Awesome"
-sudo apt install awesome -y
+#sudo apt install awesome -y
+
+echo  'Install Oh My Zsh'
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+

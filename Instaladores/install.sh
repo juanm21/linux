@@ -34,6 +34,9 @@ sudo apt install htop -y
 #Window Manager "Awesome"
 #sudo apt install awesome -y
 
+echo 'Install XMONAD'
+sudo apt install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev suckless-tools
+
 echo  'Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

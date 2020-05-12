@@ -2,16 +2,20 @@ echo 'Update'
 sudo apt update
 sudo apt upgrade
 
+echo 'Install git'
+sudo apt install git -y
+
 echo 'Install curl'
 sudo apt install software-properties-common apt-transport-https curl -y
 
 echo 'Install XInit - requerido para instalar algun gestor de ventanas' 
 sudo apt install xinit -y
 
-echo 'Install zsh'
+echo 'Install Terminal'
 #Terminal
 sudo apt install xterm -y
 sudo apt install zsh -y 
+sudo apt install terminator -y
 
 echo 'Install fonts'
 #Fonts

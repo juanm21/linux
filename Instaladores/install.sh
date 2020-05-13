@@ -21,8 +21,8 @@ echo '====================// Install Terminal'
 #Terminal
 #sudo apt install xterm -y
 sudo apt install zsh -y 
-sudo apt install rxvt-unicode -y
-#sudo apt install terminator -y
+#sudo apt install rxvt-unicode -y
+sudo apt install terminator -y
 
 echo '====================// Install fonts'
 #Fonts

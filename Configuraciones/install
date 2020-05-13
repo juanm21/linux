@@ -1,8 +1,12 @@
-echo 'Copy .Xresources'
+echo '=============================// Copy .Xresources'
 cp Xresources ~/.Xresources
 
-echo 'Cppy zshrc'
+echo '=============================// merge and load Xresources'
+xrdb -merge .Xresources
+xrdb -load .Xresources
+
+echo '=============================// Cppy zshrc'
 cp zshrc ~/.zshrc
 
-echo 'Copy terminator'
+echo '=============================// Copy terminator'
 cp terminator/ ~/.config/terminator/

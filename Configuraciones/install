@@ -3,3 +3,6 @@ cp Xresources ~/.Xresources
 
 echo 'Cppy zshrc'
 cp zshrc ~/.zshrc
+
+echo 'Copy terminator'
+cp terminator/ ~/.config/terminator/

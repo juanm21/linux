@@ -5,4 +5,5 @@ echo 'Cppy zshrc'
 cp zshrc ~/.zshrc
 
 echo 'Copy terminator'
-cp terminator/ ~/.config/terminator/
+#mkdir ~/.config/
+cp -r terminator/ ~/.config/terminator/

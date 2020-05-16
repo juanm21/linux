@@ -6,4 +6,6 @@ sudo apt install i3lock -y
 sudo apt install i3status -y
 sudo apt install suckless-tools -y
 echo 'exec i3' >> ~/.xinitrc
+#administrar wallpaper con FEH
+sudo apt install feh -y
 echo 'EJECUTAR: startx'

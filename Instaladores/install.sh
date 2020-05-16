@@ -19,9 +19,7 @@ sudo apt install xinit -y
 
 echo '====================// Install Terminal'
 #Terminal
-#sudo apt install xterm -y
 sudo apt install zsh -y 
-#sudo apt install rxvt-unicode -y
 sudo apt install terminator -y
 
 echo '====================// Install fonts'
@@ -37,12 +35,11 @@ echo '====================// Install Process Viewee htop'
 #Process Viewer
 sudo apt install htop -y
 
-#echo 'Install Awesome'
-#Window Manager "Awesome"
-#sudo apt install awesome -y
+echo '====================// Install gdebi'
+sudo apt install gdebi -y
 
-#echo 'Install XMONAD'
-#sudo apt install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev suckless-tools
+echo '====================// Install Chromium'
+sudo apt install chromium -y
 
 echo  '====================// Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

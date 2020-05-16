@@ -31,7 +31,7 @@ echo '====================// Install File Manager mc'
 #File Manager (Midnight Commander Features)
 sudo apt install mc -y
 
-echo '====================// Install Process Viewee htop'
+echo '====================// Install Process Viewer htop'
 #Process Viewer
 sudo apt install htop -y
 

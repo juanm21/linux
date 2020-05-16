@@ -1,6 +1,0 @@
-WIFI=wlp3s0
-SSID=JUANM
-sudo ip link set $WIFI up
-ip link show $WIFI
-sudo wpa_supplicant -B -D wext -i $WIFI -c /etc/wpa_supplicant.conf
-/sbin/iw $WIFI link

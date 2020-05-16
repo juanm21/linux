@@ -1,0 +1,32 @@
+# find out the wireless device name
+/sbin/iw dev
+WIFI=wlp3s0
+# check that the wireless device is up
+ip link show $WIFI
+# look for the word UP inside the brackets in the first line
+# if is not UP:
+sudo ip link set $WIFI up
+# check if is UP now
+ip link show $WIFI
+# check the connection status
+/sbin/iw $WIFI link
+#Not connected.
+# scan wifi
+sudo /sbin/iw $WIFI scan | grep SSID
+# generate a configuration file for wpa_supplicant
+sudo -s
+SSID=JUANM
+# write the SSID and then the passphrase
+wpa_passphrase $SSID >> /etc/wpa_supplicant.conf
+cat /etc/wpa_supplicant.conf
+# the second step is to run wpa_supplicant with the new configuration file
+exit
+sudo wpa_supplicant -B -D wext -i $WIFI -c /etc/wpa_supplicant.conf
+# use iw command to verify that you are indeed connected to the SSID
+/sbin/iw $WIFI link
+# obtain IP address by DHCP
+sudo dhclient $WIFI
+# use the ip command to verify the IP address assigned by DHCP
+ip addr show $WIFI
+# ping external IP address to test connectivity
+ping 8.8.8.8

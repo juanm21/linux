@@ -41,6 +41,10 @@ sudo apt install gdebi -y
 echo '====================// Install Chromium'
 sudo apt install chromium -y
 
+echo '===================// Install ELinks web browser - text'
+sudo apt install elinks -y
+
 echo  '====================// Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 

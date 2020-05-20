@@ -50,6 +50,9 @@ sudo apt install alsamixergui -y
 echo '===================// Volume Icon (exec volumeicon)'
 sudo apt install volumeicon-alsa -y
 
+echo '===================// Window Transparency'
+sudo apt install xcompmgr -y
+
 echo  '====================// Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

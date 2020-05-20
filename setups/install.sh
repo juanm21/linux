@@ -53,6 +53,9 @@ sudo apt install volumeicon-alsa -y
 echo '===================// Window Transparency'
 sudo apt install xcompmgr -y
 
+echo '===================// Autoconf (Build C)'
+sudo apt install autoconf -y
+
 echo  '====================// Install Oh My Zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

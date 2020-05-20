@@ -35,6 +35,7 @@
 *.color7:       #c5c8c6
 *.color15:      #ffffff
 
+
 ! Use a truetype font and size
 xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 10
@@ -60,3 +61,5 @@ xterm*color13:     rgb:cf/9e/be
 xterm*color14:     rgb:71/be/be
 xterm*color15:    rgb:ff/ff/ff
 xterm*cursorColor: #d6d6d6
+
+

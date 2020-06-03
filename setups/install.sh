@@ -55,7 +55,8 @@ sudo apt install volumeicon-alsa -y
 echo '==================|| Window Transparency ||==========================='
 sudo apt install xcompmgr -y
 
-echo '==================|| Autoconf (Build C) ||==========================='
+echo '==================|| (Build C) ||==========================='
+sudo apt install build-essential
 sudo apt install autoconf -y
 
 echo  '==================|| Install Oh My Zsh ||==========================='

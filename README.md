@@ -1,4 +1,4 @@
 # linux
-Commands &amp; configurations
+Important Commands &amp; configurations
 
 

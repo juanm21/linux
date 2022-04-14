@@ -28,6 +28,7 @@ echo '==================|| Install fonts ||==========================='
 #Fonts
 sudo apt install fonts-powerline -y
 sudo apt install fonts-firacode -y
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 echo '==================|| Install File Manager mc ||==========================='
 #File Manager (Midnight Commander Features)
@@ -58,6 +59,9 @@ sudo apt install xcompmgr -y
 echo '==================|| (Build C) ||==========================='
 sudo apt install build-essential
 sudo apt install autoconf -y
+
+echo '==================|| Tree ||==========================='
+sudo apt install tree
 
 echo  '==================|| Install Oh My Zsh ||==========================='
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

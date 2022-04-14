@@ -1,7 +1,11 @@
 echo '==================|| Update ||==========================='
 sudo apt update
+
 echo '==================|| Upgrade ||==========================='
 sudo apt upgrade -y
+
+echo '==================|| Install curl ||==========================='
+sudo apt install software-properties-common apt-transport-https curl -y
 
 echo '==================|| Install Timeshift ||==========================='
 sudo apt-add-repository -y ppa:teejee2008/ppa
@@ -9,9 +13,8 @@ sudo apt install timeshift -y
 
 echo '==================|| Install git ||==========================='
 sudo apt install git -y
-
-echo '==================|| Install curl ||==========================='
-sudo apt install software-properties-common apt-transport-https curl -y
+sudo apt-get install gitk git-gui
+git config --global core.autocrlf true
 
 echo '==================|| Instal wget ||==========================='
 sudo apt install wget -y
@@ -63,7 +66,11 @@ sudo apt install autoconf -y
 echo '==================|| Tree ||==========================='
 sudo apt install tree
 
-echo  '==================|| Install Oh My Zsh ||==========================='
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo '==================|| Node ||==========================='
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+. ~/.profile
+nvm install --lts
 
+echo  '==================|| Install Oh My Zsh ||==========================='
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 

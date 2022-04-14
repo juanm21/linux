@@ -70,6 +70,10 @@ echo '==================|| Node ||==========================='
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 . ~/.profile
 nvm install --lts
+. ~/.profile
+
+echo '==================|| Yarn ||==========================='
+npm install --global yarn
 
 echo  '==================|| Install Oh My Zsh ||==========================='
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash

@@ -6,3 +6,5 @@ sudo apt install software-properties-common apt-transport-https curl -y
 curl -fsSL https://raw.githubusercontent.com/juanm21/linux/master/setups/install.sh | bash
 . ~/.profile
 ```
+
+Install [powerlevel10k](https://github.com/romkatv/powerlevel10k)

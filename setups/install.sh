@@ -8,10 +8,6 @@ echo '==================|| Install Terminal ||==========================='
 sudo apt install zsh -y 
 chsh -s $(which zsh)
 
-echo 'DEFAULT_USER="juanm"' >> ~/.zshrc
-echo 'SOLARIZED_THEME="light"' >> ~/.zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' .zshrc
-
 sudo apt install terminator -y
 
 echo '[global_config]
@@ -22,7 +18,7 @@ echo '[global_config]
   title_hide_sizetext = True
   inactive_color_offset = 0.6666666666666666
   title_use_system_font = False
-  title_font = DejaVu Sans Mono 9
+  title_font = MesloLGS NF 9
 [keybindings]
 [profiles]
   [[default]]
@@ -30,7 +26,7 @@ echo '[global_config]
     background_type = transparent
     cursor_shape = ibeam
     cursor_color = "#aaaaaa"
-    font = DejaVu Sans Mono 10
+    font = MesloLGS NF 10
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
@@ -53,9 +49,6 @@ echo '==================|| Install git ||==========================='
 sudo apt install git -y
 sudo apt-get install gitk git-gui
 
-echo  '==================|| Install Oh My Zsh ||==========================='
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
-
 echo '==================|| Install curl ||==========================='
 sudo apt install software-properties-common apt-transport-https curl -y
 
@@ -70,7 +63,6 @@ echo '==================|| Install fonts ||==========================='
 #Fonts
 sudo apt install fonts-powerline -y
 sudo apt install fonts-firacode -y
-sudo git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 echo '==================|| Install File Manager mc ||==========================='
 #File Manager (Midnight Commander Features)

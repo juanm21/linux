@@ -4,11 +4,16 @@ sudo apt update
 echo '==================|| Upgrade ||==========================='
 sudo apt upgrade -y
 
+echo '==================|| Install Timeshift ||==========================='
+sudo add-apt-repository -y ppa:teejee2008/timeshift
+sudo apt install timeshift -y
+
 echo '==================|| Install Terminal ||==========================='
 sudo apt install zsh -y 
 chsh -s $(which zsh)
 
 sudo apt install terminator -y
+mkdir -p ~/.config/terminator
 
 echo '[global_config]
   focus = mouse
@@ -47,7 +52,7 @@ echo '[global_config]
 
 echo '==================|| Install git ||==========================='
 sudo apt install git -y
-sudo apt-get install gitk git-gui
+sudo apt-get install gitk git-gui -y
 
 echo '==================|| Install curl ||==========================='
 sudo apt install software-properties-common apt-transport-https curl -y
@@ -55,14 +60,20 @@ sudo apt install software-properties-common apt-transport-https curl -y
 echo '==================|| Instal wget ||==========================='
 sudo apt install wget -y
 
-echo '==================|| Install Timeshift ||==========================='
-sudo apt-add-repository -y ppa:teejee2008/ppa
-sudo apt install timeshift -y
-
 echo '==================|| Install fonts ||==========================='
 #Fonts
 sudo apt install fonts-powerline -y
 sudo apt install fonts-firacode -y
+
+mkdir -p ~/.fonts
+cd ~/.fonts
+
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
+fc-cache -fv
 
 echo '==================|| Install File Manager mc ||==========================='
 #File Manager (Midnight Commander Features)
@@ -79,7 +90,7 @@ echo '==================|| Install ELinks web browser - text ||=================
 sudo apt install elinks -y
 
 echo '==================|| (Build C) ||==========================='
-sudo apt install build-essential
+sudo apt install build-essential -y
 sudo apt install autoconf -y
 
 echo '==================|| Tree ||==========================='
@@ -100,3 +111,8 @@ nvm install --lts
 
 echo '==================|| Yarn ||==========================='
 npm install --global yarn
+
+echo '==================|| PowerLevel ||========================'
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+
